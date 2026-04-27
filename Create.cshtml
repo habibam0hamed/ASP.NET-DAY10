@@ -1,0 +1,9 @@
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    <input name="Title" placeholder="Title" />
+    <input name="Description" placeholder="Description" />
+    <input name="DueDate" type="date" />
+
+    <button type="submit">Add Task</button>
+</form>

@@ -1,0 +1,8 @@
+@model TaskItem
+
+<form method="post">
+    <input asp-for="Title" placeholder="Title" />
+    <input asp-for="Description" placeholder="Description" />
+    <input asp-for="DueDate" type="date" />
+    <button type="submit">Save</button>
+</form>

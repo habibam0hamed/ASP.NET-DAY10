@@ -1,0 +1,13 @@
+@model TaskItem
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="Id" />
+
+    <input asp-for="Title" />
+    <input asp-for="Description" />
+    <input asp-for="DueDate" type="date" />
+
+    <button type="submit">Update</button>
+</form>
